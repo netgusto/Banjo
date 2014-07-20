@@ -26,7 +26,7 @@ RouteLoader.prototype.loadRoutes = function() {
 
             var path = route.path.replace(/^\/+/, '');
 
-            this.app.get(
+            this.app[route.method||'get'](
                 mountpoint + path,
                 routename,
                 function() {
