@@ -1,0 +1,36 @@
+{
+    "name": "banjo",
+    "description":"Banjo is an NodeJS Express based, Symfony2 DI-container inspired application framework",
+    "version": "0.0.1",
+    "author": {
+        "name":"Jérôme Schneider"
+    },
+    "contributors":[],
+    "repository": {
+    "type": "git",
+        "url": "git://github.com/netgusto/Banjo.git"
+    },
+    "main": "index.js",
+    "directories": {
+        "lib": "./lib"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/linkshare/service-container/blob/master/LICENSE"
+        }
+    ],
+    "engines" : { "node" : ">=0.8.17" },
+    "dependencies": {
+        "underscore": "~1.6.0",
+        "named-routes": "~1.1.4",
+        "express": "~4.6.1",
+        "express-hbs": "~0.7.10",
+        "service-container": "git://github.com/netgusto/service-container.git#master",
+        "knex": "~0.6.22",
+        "bookshelf": "~0.7.6",
+        "mysql": "~2.4.1"
+    },
+    "devDependencies": {
+    }
+}
