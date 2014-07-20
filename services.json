@@ -1,7 +1,4 @@
 {
-    "parameters": {
-        "kernel.serverport": 3000
-    },
     "services": {
 
         "app": {
@@ -12,6 +9,19 @@
         "path": {
             "isObject": true,
             "class": "path"
+        },
+
+        "kernel.orm": {
+            "class": "./services/ORM",
+            "isFunction": true,
+            "arguments": [
+                "%kernel.database_driver%",
+                "%kernel.database_host%",
+                "%kernel.database_user%",
+                "%kernel.database_password%",
+                "%kernel.database_name%",
+                "%kernel.database_charset%"
+            ]
         },
 
         "core.viewhelpers": {
